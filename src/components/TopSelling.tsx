@@ -1,7 +1,6 @@
 import React from 'react'
 import ProductCard from './ProductCard'
 import ViewAll from './ViewAll'
-import Underline from './Underline'
 import { products } from '@/data/product'
 
 const TopSelling = () => {
