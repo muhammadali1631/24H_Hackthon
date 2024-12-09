@@ -10,7 +10,7 @@ const HappyCustomers = () => {
             <h1 className='font-black text-4xl'>OUR HAPPY CUSTOMERS</h1>
             <div className='flex gap-5'> <FaArrowLeft className='text-xl' /> <FaArrowRight className='text-xl'/></div>
         </div>
-        <div className='flex gap-3 mt-10 overflow-x-scroll hide-scrollbar justify-center px-2'>
+        <div className='flex gap-3 mt-10 overflow-x-scroll hide-scrollbar justify-around sm:justify-center px-2'>
             {reviews.map((review, index)=>(
                 <Review key={index} review={review}/>
             ))}

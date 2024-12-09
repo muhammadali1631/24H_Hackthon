@@ -12,7 +12,7 @@ const Hero = () => {
           Browse through our diverse range of meticulously crafted garments, designed
           to bring out your individuality and cater to your sense of style.
         </p>
-        <Link href={'/'}>
+        <Link href={'/casual'}>
         <button className="bg-black text-white text-sm lg:text-base font-medium px-10 py-3 rounded-full hover:bg-gray-800">
           Shop Now
         </button>
