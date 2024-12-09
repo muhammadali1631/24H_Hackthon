@@ -9,7 +9,7 @@ interface Props {
     stars: IconType[];
     desc: string
   }
-  count: number
+  count?: number
 }
 
 const Review = ({ review, count }: Props) => {
