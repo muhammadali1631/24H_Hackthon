@@ -83,7 +83,7 @@ const Header = () => {
           />
         </div>
 
-        <Link href="#" className="hover:text-gray-500">
+        <Link href="/cart" className="hover:text-gray-500">
           <FiShoppingCart size={20} />
         </Link>
 

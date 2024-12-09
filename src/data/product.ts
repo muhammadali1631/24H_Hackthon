@@ -42,8 +42,10 @@ export const products = [
     price: "$240",
     orignalPrice: "$260",
     discount: "-20%",
-    tags: ['new'],
-    link: 'shop/skinny-fit-jeans'
+    tags: ['new', 'cart'],
+    link: 'shop/skinny-fit-jeans',
+    size: 'Large',
+    color: 'Blue'
 
   },
   {
@@ -58,8 +60,10 @@ export const products = [
     review: 4.5,
     outOf: "/5",
     price: "$180",
-    tags: ['new'],
-    link: 'shop/checkered-shirt'
+    tags: ['new', 'cart'],
+    link: 'shop/checkered-shirt',
+    size: 'Medium',
+    color: 'Red'
   },
   {
     id:4,
@@ -149,7 +153,9 @@ export const products = [
     review: "3.5",
     outOf: "/5",
     price: "$145",
-    tags: ['best'],
-    link: 'shop/gradient-graphic-t-shirt'
+    tags: ['best', 'cart'],
+    link: 'shop/gradient-graphic-t-shirt',
+    size: 'Large',
+    color: 'White'
   },
 ];
