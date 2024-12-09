@@ -1,8 +1,18 @@
 import React from 'react'
 import { FaCheckCircle } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
+import { IconType } from 'react-icons';
 
-const Review = ({ review, count }: { review: any; count?: number }) => {
+interface Props {
+  review: {
+    name: string;
+    stars: IconType[];
+    desc: string
+  }
+  count: number
+}
+
+const Review = ({ review, count }: Props) => {
   return (
     <div className=' border-[1px] rounded-2xl p-6  space-y-2'>
       <div className='flex justify-between'>
