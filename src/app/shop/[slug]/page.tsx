@@ -56,7 +56,7 @@ const page = async({
                 </div>
                 <div className='flex justify-around my-3 gap-7'>
                     <Counter/>
-                    <button className='py-2 px-10 text-white rounded-full bg-black w-[150px]'>Buy Now</button>
+                    <button className='py-2 px-10 text-white rounded-full bg-black w-[150px] sm:w-[300px]'>Buy Now</button>
                 </div>
             </div>
             </div>

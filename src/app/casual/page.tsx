@@ -8,7 +8,7 @@ import { FaArrowLeft, FaArrowRight} from "react-icons/fa6";
 import { VscSettings } from "react-icons/vsc";
 
 
-const page = () => {
+const Page = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [open, setOpen] = useState('hidden')
   const toggleBtn = () =>{
@@ -56,4 +56,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
