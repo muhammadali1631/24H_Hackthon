@@ -4,21 +4,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import { client } from '@/sanity/lib/client';
 import ProductDetails from '@/components/ProductDetails';
 import Tabs from '@/components/Tabs';
-const sizes = ['Small', 'Medium', 'Large', 'X-Large']
-interface productType {
-    name?: string;
-    title?: string;
-    description?: string;
-    images?: [];
-    rating?: number;
-    sizes?: [];
-    mainImage?: {};
-    discount?: number;
-    colors?: string[];
-    tags?: string[];
-    slug?: {};
-
-}
 const page = async({
     params,
   }: {

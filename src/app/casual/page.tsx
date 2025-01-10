@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import { IoIosArrowForward,IoIosArrowDown } from 'react-icons/io'
 import { FaArrowLeft, FaArrowRight} from "react-icons/fa6";
 import { VscSettings } from "react-icons/vsc";
-import { client } from '@/sanity/lib/client'
+// import { client } from '@/sanity/lib/client'
 
 
 const Page = () => {
