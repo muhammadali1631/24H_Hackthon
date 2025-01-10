@@ -7,13 +7,13 @@ const Hero = () => {
   return (
     <section className="bg-[#F2F0F1] pt-14 px-8 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center lg:items-start relative">
       <div className="lg:w-1/2 flex flex-col items-start space-y-6 mb-0 lg:mb-16">
-        <Image src={heading} alt='Heading' className='w-[450px] object-contain'/>
+        <Image src={heading} alt='Heading' className='w-[450px] object-contain scale-in-top'/>
         <p className="text-gray-600 text-sm lg:text-base">
           Browse through our diverse range of meticulously crafted garments, designed
           to bring out your individuality and cater to your sense of style.
         </p>
         <Link href={'/casual'}>
-        <button className="bg-black text-white text-sm lg:text-base font-medium px-10 py-3 rounded-full hover:bg-gray-800">
+        <button className="px-4 py-2 border-[1px] border-black text-white bg-black font-bold hover:text-black hover-bg-white duration-300">
           Shop Now
         </button>
         </Link>
@@ -38,7 +38,7 @@ const Hero = () => {
         <Image
           src={image}
           alt="models"
-          className="rounded-md object-cover max-w-full"
+          className="rounded-md object-cover max-w-full scale-in-bottom"
         />
       </div>
     </section>

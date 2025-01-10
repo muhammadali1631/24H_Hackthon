@@ -2,11 +2,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
-import { FiSearch, FiShoppingCart, FiUser } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 import logo from '@/images/logo.png'
 import { RxCross2 } from "react-icons/rx";
+import SearchBar from './SearchBar';
+import CartPageIcon from './CardPageIcon';
+import { FaRegHeart } from "react-icons/fa6";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -74,17 +78,13 @@ const Header = () => {
       </ul>
 
       <div className="flex items-center space-x-4">
-        <div className="flex items-center md:bg-gray-100 px-0 md:px-4 py-0 md:py-2 rounded-full">
-          <FiSearch className="text-black text-[20px] md:text-gray-500" />
-          <input
-            type="text"
-            placeholder="Search for products..."
-            className="ml-2 bg-transparent outline-none text-sm w-[500px] hidden md:block"
-          />
-        </div>
+        <SearchBar/>
 
         <Link href="/cart" className="hover:text-gray-500">
-          <FiShoppingCart size={20} />
+          <CartPageIcon/>
+        </Link>
+        <Link href="/wishlist" className="hover:text-gray-500">
+          <FaRegHeart size={20}/>
         </Link>
 
         <Link href="#" className="hover:text-gray-500">

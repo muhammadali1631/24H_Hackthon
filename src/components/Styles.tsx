@@ -15,16 +15,16 @@ const Styles = () => {
     <div className='bg-[#F2F0F1] mx-5 sm:mx-16 py-16 rounded-[30px] space-y-10 px-6'>
         <h1 className='text-center text-5xl font-black'>BROWSE BY DRESS STYLE</h1>
         <div className='hidden md:flex gap-10 justify-center'>
-            <Image src={casual} alt='casual style' className=' md:w-[30%]'/>
-            <Image src={formal} alt='formal style' className='md:w-[60%]'/>
+            <Image src={casual} alt='casual style' className=' md:w-[30%] fade-in'/>
+            <Image src={formal} alt='formal style' className='md:w-[60%] fade-in'/>
         </div>
         <div className='hidden md:flex gap-10 justify-center'>
-            <Image src={party} alt='casual style'  className='md:w-[60%] '/>
-            <Image src={gym} alt='formal style' className='md:w-[30%]'/>
+            <Image src={party} alt='casual style'  className='md:w-[60%] fade-in'/>
+            <Image src={gym} alt='formal style' className='md:w-[30%] fade-in'/>
         </div>
         <div className='md:hidden space-y-4'>
           {images.map((image, index)=>(
-            <Image key={index} src={image} alt="dress style" className='w-[100%]'/>
+            <Image key={index} src={image} alt="dress style" className='w-[100%] fade-in'/>
           ))}
         </div>
     </div>
