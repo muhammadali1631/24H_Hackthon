@@ -9,7 +9,7 @@ const TopSelling = () => {
   const [data, setData] = useState<ProductType[]>([])
   const getData = async( )=>{
 
-    const products:ProductType[] = await client.fetch(`*[_type == 'product'] | order(_createdAt asc)`)
+    const products:ProductType[] = await client.fetch(`*[_type == 'product'] | order(_createdAt desc)`)
     setData(products)
   }
   getData()

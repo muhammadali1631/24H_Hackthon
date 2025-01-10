@@ -11,7 +11,7 @@ const NewArrivals = () => {
   const [data, setData] = useState<ProductType[]>([])
   const getData = async( )=>{
 
-    const products:ProductType[] = await client.fetch(`*[_type == 'product'] | order(_createdAt asc)`)
+    const products:ProductType[] = await client.fetch(`*[_type == 'product'] | order(_createdAt desc)`)
     setData(products)
   }
   getData()
@@ -20,7 +20,7 @@ const NewArrivals = () => {
     <div className=" p-4 px-10 my-16" id='new'>
       <h2 className="text-4xl font-black text-center mb-10">NEW ARRIVALS</h2>
       <div className="flex justify-around gap-3 overflow-x-scroll hide-scrollbar my-6">
-        {data.filter((item)=> item.tags.includes('new')).map((product, index) => (
+        {data.filter(item=> item.tags.includes('new')).map((product, index) => (
           <ProductCard key={index} product={product}/>
         ))}
       </div>
