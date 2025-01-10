@@ -33,12 +33,12 @@ const Header = () => {
         <div>
         <ul className={`${attr} w-[100vw] left-0 top-14 absolute bg-white z-20  text-center space-x-6 space-y-3 text-xl  py-4 font-medium md:hidden`}>
         <li className=''>
-          <Link href="#" className="hover:text-gray-500 flex items-center gap-1 mx-auto justify-center ml-7">
+          <Link href="/casual" className="hover:text-gray-500 flex items-center gap-1 mx-auto justify-center ml-7">
             <span>Shop</span> <IoIosArrowDown/>
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-gray-500">
+          <Link href="#best" className="hover:text-gray-500">
             On Sale
           </Link>
         </li>
@@ -48,7 +48,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-gray-500">
+          <Link href="#brands" className="hover:text-gray-500">
             Brands
           </Link>
         </li>
@@ -56,22 +56,22 @@ const Header = () => {
         </div>
       <ul className="hidden space-x-6 text-sm font-medium lg:flex">
         <li>
-          <Link href="#" className="hover:text-gray-500 flex items-center gap-1">
+          <Link href="/casual" className="hover:text-gray-500 flex items-center gap-1">
             Shop <IoIosArrowDown/>
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-gray-500">
+          <Link href="#best" className="hover:text-gray-500">
             On Sale
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-gray-500">
+          <Link href="#new" className="hover:text-gray-500">
             New Arrivals
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-gray-500">
+          <Link href="#brands" className="hover:text-gray-500">
             Brands
           </Link>
         </li>
@@ -82,9 +82,6 @@ const Header = () => {
 
         <Link href="/cart" className="hover:text-gray-500">
           <CartPageIcon/>
-        </Link>
-        <Link href="/wishlist" className="hover:text-gray-500">
-          <FaRegHeart size={20}/>
         </Link>
 
         <Link href="#" className="hover:text-gray-500">

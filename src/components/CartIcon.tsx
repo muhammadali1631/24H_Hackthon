@@ -32,7 +32,7 @@ const CartIcon = ({ id, add,}: { id: string; add?: string; }) => {
       {add ? (
         <button
           type="button"
-          className="px-4 rounded-full py-2 border-[1px] border-black text-white bg-black font-bold hover:text-black hover-bg-white duration-300"
+          className="px-4 rounded-full py-2 border-[1px] border-black text-white bg-black font-bold hover:text-black hover:bg-white duration-300"
           onClick={() => addCart(id)}
         >
           Add to cart

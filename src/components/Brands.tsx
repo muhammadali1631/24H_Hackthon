@@ -9,7 +9,7 @@ import Image from 'next/image'
 const brandsImage = [versace, zara,gucci, prada, calvin]
 const Brands = () => {
   return (
-    <div className='bg-black flex justify-around py-10 px-5 flex-wrap gap-4'>
+    <div className='bg-black flex justify-around py-10 px-5 flex-wrap gap-4' id='brands'>
         {brandsImage.map((item, index)=>(
             <Image key={index} src={item} alt='Brand Image'/>
         ))}

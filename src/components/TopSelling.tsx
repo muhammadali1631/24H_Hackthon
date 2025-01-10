@@ -15,7 +15,7 @@ const TopSelling = () => {
   getData()
   
   return (
-    <div className=" p-4 px-10 my-16">
+    <div className=" p-4 px-10 my-16" id='best'>
       <h2 className="text-4xl font-black text-center mb-10">BEST SELLING</h2>
       <div className="flex justify-around gap-3 overflow-x-scroll hide-scrollbar my-6">
         {data.filter(item => item.tags.includes('top')).map((product, index) => (

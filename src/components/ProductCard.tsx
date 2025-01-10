@@ -19,17 +19,19 @@ const ProductCard = ({product, from}: {product: ProductType, from?: string}) => 
             <CartIcon id={product._id}/>
           </div>
         </div>
-        <h3 className={`line-clamp-2 font-bold  mt-4 ml-2 ${from === 'casual'? 'text-lg w-[100px]': 'text-xl' }`}>{product.title}</h3>
+        <Link href={`shop/${product.slug.current}`} className='w-full h-full'>
+
+        <h3 className={`line-clamp-2 font-bold  mt-4 ml-2 ${from === 'casual'? 'text-lg': 'text-xl' }`}>{product.title}</h3>
         <div className='space-y-1 flex items-center gap-1 ml-2 '>
             <div className='flex gap-1'>{Array(Number(product.rating?.toString().charAt(0))).fill(FaStar).map((Icon:any, index:number) => (<Icon key={index} className='text-yellow-500'/>))} {product.rating?.toString().charAt(2) === '5' && (<FaStarHalf className='text-yellow-500'/>)}</div>
             <p>{product.rating}<span className='text-gray-500 mx-[1px]'>/5</span></p>
         </div>
-        <div className={`flex gap-2 ml-2 ${from === 'casual' &&' sm:gap-[1px] sm:ml-0'}`}>
+        <div className={`flex gap-2 ml-2 ${from === 'casual' &&' sm:gap-[3px]  flex-wrap'}`}>
         <h3 className={` ${from === 'casual'? 'text-lg': 'text-xl font-bold' }`}>${product.discount? product.sizes[0].price - (product.sizes[0].price * product.discount / 100) : product.sizes[0].price}</h3>
         {product.discount && <h3 className={` line-through text-gray-500 ${from === 'casual'? 'text-lg': 'text-xl font-bold' }`}>{product.sizes[0].price}</h3>}
         {product.discount && <p className='pt-[2.5px] px-2 rounded-full text-red-600 bg-red-200'>-{product.discount}%</p>}
-        
         </div>
+        </Link>
     </div>
   )
 }

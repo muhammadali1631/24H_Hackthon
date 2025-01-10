@@ -13,7 +13,7 @@ const Hero = () => {
           to bring out your individuality and cater to your sense of style.
         </p>
         <Link href={'/casual'}>
-        <button className="px-4 py-2 border-[1px] border-black text-white bg-black font-bold hover:text-black hover-bg-white duration-300">
+        <button className="rounded-full px-4 py-2 border-[1px] border-black text-white bg-black font-bold hover:text-black hover:bg-white duration-300">
           Shop Now
         </button>
         </Link>
