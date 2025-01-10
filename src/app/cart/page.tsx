@@ -10,7 +10,7 @@ import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
 
 
-const page = () => {
+const Page = () => {
   const [cart, setCart] = useState<string[]>([]);
   const [Products, setProducts] = useState<ProductType[]>([])
     const [count, setCount] = useState(1);
@@ -114,4 +114,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

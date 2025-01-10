@@ -20,6 +20,7 @@ const ProductDetails = ({ product } : {product : ProductType}) => {
         <div className="flex sm:block gap-2 justify-around">
           {filtered.colorImage.map((item, index) => (
             <div
+            key={index}
               className={`h-[90px] w-[90px]  sm:h-[150px] sm:w-[150px] my-2 bg-[#F2F0F1] rounded-xl cursor-pointer ${index === Index && "border-2 border-blue-500"}`}
               onClick={() => setIndex(index)}
             >
@@ -85,6 +86,7 @@ const ProductDetails = ({ product } : {product : ProductType}) => {
         <div className="flex gap-3 border-b-2  pb-3">
           {product.images.map((item, index) => (
             <div
+            key={index}
               className={`h-[60px] w-[70px] bg-gray-100 rounded-lg cursor-pointer  ${item.color === color && "border-2 border-blue-500"}`}
               onClick={() => setColor(item.color)}
             >

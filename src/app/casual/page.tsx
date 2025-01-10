@@ -1,7 +1,7 @@
 'use client'
-import ProductCard from '@/components/ProductCard'
+// import ProductCard from '@/components/ProductCard'
 import SideBar from './components/SideBar'
-import { products } from '@/data/product'
+// import { products } from '@/data/product'
 import React, { useState } from 'react'
 import { IoIosArrowForward,IoIosArrowDown } from 'react-icons/io'
 import { FaArrowLeft, FaArrowRight} from "react-icons/fa6";
@@ -16,9 +16,9 @@ const Page = () => {
     setOpen(isOpen? 'hidden' : 'block')
     setIsOpen(!isOpen)
   }
-  const getProducts = async()=>{
-    const data = await client.fetch(`*[_type == 'product']`)
-  }
+  // const getProducts = async()=>{
+  //   const data = await client.fetch(`*[_type == 'product']`)
+  // }
   return (
     <div className='relative'>
     <h1 className='flex items-center px-2 sm:px-10'>Home <IoIosArrowForward/> Casual</h1>
