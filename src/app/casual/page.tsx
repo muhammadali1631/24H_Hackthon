@@ -30,14 +30,14 @@ const Page = () => {
 
       <SideBar />
       </div>
-      <div className={`fixed top-[18vh] lg:hidden ${open}`}>
+      <div className={`fixed z-40 top-[18vh] lg:hidden ${open}`}>
 
     <SideBar open={open} toggleBtn={toggleBtn} />
       </div>
     <div className='px-1 sm:px-5  lg:w-[70vw]'>
     <div className='flex justify-between items-center my-3 '>
     <h1 className='text-black font-semibold text-lg sm:text-xl'>Casual</h1>
-    <p className='flex items-center text-sm'>Showing 1-10 of 100 Products  <span className='hidden lg:flex text-black items-center font-semibold '> <span className='font-medium'>Sortby:</span> Most Popular <IoIosArrowDown/></span> <VscSettings onClick={toggleBtn} className='  bg-gray-200 h-[27px] w-[27px] p-1 rounded-full lg:hidden ml-1'/> </p>
+    <p className='flex items-center text-sm'>Showing 1-10 of 100 Products  <span className='hidden lg:flex text-black items-center font-semibold '> <span className='font-medium'>Sortby:</span> Most Popular <IoIosArrowDown/></span> <VscSettings onClick={toggleBtn} className='cursor-pointer  bg-gray-200 h-[27px] w-[27px] p-1 rounded-full lg:hidden ml-1'/> </p>
     </div>
     <div className='flex flex-wrap justify-around gap-2 sm:gap-5 border-b-2 pb-4'>
     {products.map((product, index)=>(
